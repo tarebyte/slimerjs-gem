@@ -1,15 +1,15 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'slimerjs/gem/version'
+require 'slimerjs/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "slimerjs-gem"
-  spec.version       = Slimerjs::Gem::VERSION
+  spec.version       = Slimerjs::VERSION
   spec.authors       = ["Mark Tareshawty"]
   spec.email         = ["tarebyte@gmail.com"]
   spec.summary       = %q{Auto-install slimerjs on demand for current platform.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.description   = %q{Auto-install slimerjs on demand for current platform.}
   spec.homepage      = "https://github.com/tarebyte/slimerjs-gem"
 
   spec.files         = `git ls-files -z`.split("\x0")
