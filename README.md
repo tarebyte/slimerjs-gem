@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ```ruby
 # Standalone
-require 'slimerjs/standalone'
+require 'slimerjs'
 
 # Lightweight
 require 'slimerjs/lighweight'
