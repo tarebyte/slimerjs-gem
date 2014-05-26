@@ -1,9 +1,12 @@
 # Slimerjs-Gem
 ## Work in progress
 
+[![Build Status](https://travis-ci.org/tarebyte/slimerjs-gem.svg?branch=master)](https://travis-ci.org/tarebyte/slimerjs-gem)
+
 This is basically a knock off of the [PhantomJS Gem](https://github.com/colszowka/phantomjs-gem) for [SlimerJS](http://slimerjs.org/)
 
 This supports both the [standalone edition](http://slimerjs.org/download.html#standalone) and the [lightweight edition](http://slimerjs.org/download.html#lightweight).
+
 
 ## Installation
 
