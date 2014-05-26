@@ -1,7 +1,7 @@
 # Slimerjs-Gem
-## Work in progress
-
 [![Build Status](https://travis-ci.org/tarebyte/slimerjs-gem.svg?branch=master)](https://travis-ci.org/tarebyte/slimerjs-gem)
+
+## Work in progress
 
 This is basically a knock off of the [PhantomJS Gem](https://github.com/colszowka/phantomjs-gem) for [SlimerJS](http://slimerjs.org/)
 
