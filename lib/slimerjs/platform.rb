@@ -17,7 +17,7 @@ module Slimerjs
         if system_slimerjs_installed?
           system_slimerjs_path
         else
-          File.expand_path File.join(Slimerjs.base_dir, platform, 'bin/slimerjs')
+          File.expand_path File.join(Slimerjs.base_dir, platform, 'slimerjs')
         end
       end
 
@@ -87,6 +87,28 @@ module Slimerjs
       end
     end
 
+    class Lightweight < Platform
+      class << self
+        def useable
+          # WIP come back and fix this
+          (
+            Slimerjs::Platform::Linux32.useable? ||
+            Slimerjs::Platform::Linux32.useable? ||
+            Slimerjs::Platform::OsX.useable? ||
+            Slimerjs::Platform::Win32.useable?
+          )
+        end
+
+        def platform
+          'lightweight'
+        end
+
+        def package_url
+          'http://download.slimerjs.org/v0.9/0.9.1/slimerjs-0.9.1.zip'
+        end
+      end
+    end
+
     class Linux64 < Platform
       class << self
         def useable?
@@ -146,10 +168,10 @@ module Slimerjs
         end
 
         def slimerjs_path
-          if system_slimjs_installed?
+          if system_slimerjs_installed?
             system_slimerjs_path
           else
-            File.expand_path File.join(Slimerjs.base_dir, platform, 'slimerjs.exe')
+            File.expand_path File.join(Slimerjs.base_dir, platform, 'slimerjs.bat')
           end
         end
 

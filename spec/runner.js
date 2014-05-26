@@ -1,3 +1,7 @@
-console.log('bar ' + slimer.args[0]);
-console.log('bar ' + slimer.args[1]);
+var system = require('system');
+var args = system.args
+
+console.log('bar ' + args[1]);
+console.log('bar ' + args[2]);
+
 slimer.exit();

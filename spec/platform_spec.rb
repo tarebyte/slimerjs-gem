@@ -35,7 +35,7 @@ describe Slimerjs::Platform do
       before(:each) { Slimerjs::Platform.stub(:system_slimerjs_version).and_return(nil) }
 
       it "returns the correct slimer js executable path for the platform" do
-        Slimerjs.path.should =~ /x86_64-linux\/bin\/slimerjs$/
+        Slimerjs.path.should =~ /x86_64-linux\/slimerjs$/
       end
     end
 
@@ -83,7 +83,7 @@ describe Slimerjs::Platform do
       before(:each) { Slimerjs::Platform.stub(:system_slimerjs_version).and_return(nil) }
 
       it "returns the correct slimer js executable path for the platform" do
-        Slimerjs.path.should =~ /x86_32-linux\/bin\/slimerjs$/
+        Slimerjs.path.should =~ /x86_32-linux\/slimerjs$/
       end
     end
 
@@ -125,7 +125,7 @@ describe Slimerjs::Platform do
       before(:each) { Slimerjs::Platform.stub(:system_slimerjs_version).and_return(nil) }
 
       it "returns the correct slimer js executable path for the platform" do
-        Slimerjs.path.should =~ /darwin\/bin\/slimerjs$/
+        Slimerjs.path.should =~ /darwin\/slimerjs$/
       end
     end
 
@@ -163,7 +163,7 @@ describe Slimerjs::Platform do
       before(:each) { Slimerjs::Platform.stub(:system_slimerjs_version).and_return(nil) }
 
       it "returns the correct slimer js executable path for the platform" do
-        Slimerjs.path.should =~ /win32\/slimerjs.exe$/
+        Slimerjs.path.should =~ /win32\/slimerjs.bat$/
       end
     end
 

@@ -1,3 +1,6 @@
+before_install:
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
 script:
   - bundle
   - bundle exec rspec
@@ -5,9 +8,8 @@ rvm:
   - 1.9
   - 2.0
   - 2.1
-  - 2.2
   - jruby-19mode
-  - rbx-1.9.3
+  - rbx-2.2.7
 notifications:
   email:
     on_success: always
