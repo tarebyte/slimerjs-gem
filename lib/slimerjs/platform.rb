@@ -87,6 +87,28 @@ module Slimerjs
       end
     end
 
+    class Lightweight < Platform
+      class << self
+        def useable
+          # WIP come back and fix this
+          (
+            Slimerjs::Platform::Linux64.useable? ||
+            Slimerjs::Platform::Linux32.useable? ||
+            Slimerjs::Platform::OsX.useable? ||
+            Slimerjs::Platform::Win32.useable?
+          )
+        end
+
+        def platform
+          'lightweight'
+        end
+
+        def package_url
+          'http://download.slimerjs.org/v0.9/0.9.3/slimerjs-0.9.3.zip'
+        end
+      end
+    end
+
     class Linux64 < Platform
       class << self
         def useable?
