@@ -87,28 +87,6 @@ module Slimerjs
       end
     end
 
-    class Lightweight < Platform
-      class << self
-        def useable
-          # WIP come back and fix this
-          (
-            Slimerjs::Platform::Linux32.useable? ||
-            Slimerjs::Platform::Linux32.useable? ||
-            Slimerjs::Platform::OsX.useable? ||
-            Slimerjs::Platform::Win32.useable?
-          )
-        end
-
-        def platform
-          'lightweight'
-        end
-
-        def package_url
-          'http://download.slimerjs.org/v0.9/0.9.1/slimerjs-0.9.1.zip'
-        end
-      end
-    end
-
     class Linux64 < Platform
       class << self
         def useable?
@@ -120,7 +98,7 @@ module Slimerjs
         end
 
         def package_url
-          'http://download.slimerjs.org/v0.9/0.9.1/slimerjs-0.9.1-linux-x86_64.tar.bz2'
+          'http://download.slimerjs.org/releases/0.9.3/slimerjs-0.9.3-linux-x86_64.tar.bz2'
         end
       end
     end
@@ -136,7 +114,7 @@ module Slimerjs
         end
 
         def package_url
-          'http://download.slimerjs.org/v0.9/0.9.1/slimerjs-0.9.1-linux-i686.tar.bz2'
+          'http://download.slimerjs.org/releases/0.9.3/slimerjs-0.9.3-linux-i686.tar.bz2'
         end
       end
     end
@@ -152,7 +130,7 @@ module Slimerjs
         end
 
         def package_url
-          'http://download.slimerjs.org/v0.9/0.9.1/slimerjs-0.9.1-mac.tar.bz2'
+          'http://download.slimerjs.org/releases/0.9.3/slimerjs-0.9.3-mac.tar.bz2'
         end
       end
     end
@@ -176,7 +154,7 @@ module Slimerjs
         end
 
         def package_url
-          'http://download.slimerjs.org/v0.9/0.9.1/slimerjs-0.9.1-win32.zip'
+          'http://download.slimerjs.org/releases/0.9.3/slimerjs-0.9.3-win32.zip'
         end
       end
     end

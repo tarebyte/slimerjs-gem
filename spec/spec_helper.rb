@@ -1,5 +1,4 @@
  require 'rubygems'
- require 'simplecov'
  require 'bundler/setup'
 
  require 'slimerjs'

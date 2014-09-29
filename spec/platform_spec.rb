@@ -10,7 +10,7 @@ describe Slimerjs::Platform do
       end
 
       it "is false when the system version does not match Slimerjs.version" do
-        Slimerjs::Platform.should_receive(:system_slimerjs_version).and_return('0.9.1')
+        Slimerjs::Platform.should_receive(:system_slimerjs_version).and_return('1.2.3')
         expect(Slimerjs::Platform.system_slimerjs_installed?).to be_false
       end
 
