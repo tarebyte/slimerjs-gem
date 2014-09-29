@@ -12,7 +12,7 @@ For now this supports the [standalone edition](http://slimerjs.org/download.html
 
 Add this line to your application's Gemfile:
 
-    gem 'slimerjs'
+    gem 'slimerjs-gem'
 
 And then execute:
 
@@ -20,7 +20,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install slimerjs
+    $ gem install slimerjs-gem
 
 ## Example
 
