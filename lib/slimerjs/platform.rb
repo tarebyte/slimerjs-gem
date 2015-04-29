@@ -104,7 +104,7 @@ module Slimerjs
         end
 
         def package_url
-          'http://download.slimerjs.org/v0.9/0.9.3/slimerjs-0.9.3.zip'
+          'http://download.slimerjs.org/v0.9/0.9.5/slimerjs-0.9.5.zip'
         end
       end
     end
