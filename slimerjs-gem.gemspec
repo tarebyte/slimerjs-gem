@@ -8,6 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Slimerjs::VERSION
   spec.authors       = ["Mark Tareshawty"]
   spec.email         = ["tarebyte@gmail.com"]
+  spec.licenses      = ['MIT']
   spec.summary       = %q{Auto-install slimerjs on demand for current platform.}
   spec.description   = %q{Auto-install slimerjs on demand for current platform.}
   spec.homepage      = "https://github.com/tarebyte/slimerjs-gem"
